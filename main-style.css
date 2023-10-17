@@ -1,0 +1,129 @@
+@font-face {
+    font-family:Roboto;
+    src: url(./fonts/Roboto/Roboto.ttf);
+}
+@font-face {
+    font-family:Roboto Mono;
+    src: url(./fonts/RobotoMono/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Montserrat;
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf
+    );
+}
+@font-face {
+    font-family: SFMono;
+    src: url(./fonts/SFMono/SFMono-Regular.otf);
+}
+body{
+    margin: 0;
+    font-size:18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:#212529;
+    background: linear-gradient(-45deg, #ed193b, #6e8cdf, #f286e2, #681d7a);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;  
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ 
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+header{
+    text-align: center;
+    font-family:Roboto;
+    font-size: 0.8em;
+
+}
+h1{
+    font-family:Montserrat;
+    font-size: 1.5em;
+    text-align: left;
+
+}
+h2{
+    font-family:Montserrat;
+    font-size: 1em;
+    text-align: left;
+    padding: 6px 10px;
+}
+.content{
+    height: 1640px;
+    width: 1180px;
+    margin: auto;
+    column-count: 3;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    flex-direction: row;
+    margin: 20px;
+    flex-wrap: wrap;
+    font-family:Montserrat;
+    font-size: 1em;
+    background: linear-gradient(45deg,#ed193b,#6e8cdf, #f286e2 , #681d7a );
+    border-radius:24px;
+    width:330px;
+    height:420px;
+    transition: all 0.3s linear;
+    padding: 10px;
+    border: 1px solid #ccc;
+}   
+a{
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(212, 30, 115);
+    text-shadow:
+    0 0 1px rgb(212, 30, 115),
+    0 0 2px rgb(212, 30, 115),
+    0 0 5px rgb(212, 30, 115);
+}
+.block:hover{
+    box-shadow: 8px 10px 5px 2px rgba(0, 120, 136, 0.2);
+    
+
+}
+.block > img{
+    width: auto;
+    height: 20%;        
+}
+
+footer{
+    font-size: 0.7em;
+    font-family: SFMono;
+    text-align: right;
+    white-space: nowrap;
+}
+.footer-icon{
+    width:40px;
+    height: 40px;
+}
+.hexlet{
+   text-align:center;
+   margin-bottom: 20px;
+   font-size: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.block:hover{
+    transform: scale(1.05);
+}
